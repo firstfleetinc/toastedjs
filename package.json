@@ -1,14 +1,11 @@
 {
-  "name": "toastedjs",
-  "description": "Javascript Toast Plugin - Easy, Responsive and Touch Compatible",
-  "version": "0.0.2",
-  "author": "Shakeeb Sadikeen <shakee.zats@gmail.com>",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/shakee93/toastedjs.git"
-  },
+  "name": "@firstfleet/toastedjs",
+  "description": "Fork of toastedjs, updated to support font-awesome icons rather than material icons. Javascript Toast Plugin - Easy, Responsive and Touch Compatible",
+  "version": "1.0.0",
+  "author": "Jess Patton",
   "main": "./src/index.js",
   "scripts": {
+    "send": "npm publish --access public",
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
     "build": "cross-env NODE_ENV=production webpack --config ./build/webpack.release.js --progress --hide-modules",
     "build-watch": "cross-env NODE_ENV=production webpack --config ./build/webpack.release.js --progress --hide-modules --watch",

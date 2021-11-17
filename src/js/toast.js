@@ -296,7 +296,7 @@ export const Toast = function (instance) {
 		if (options.icon) {
 
 			let iel = document.createElement('i');
-			iel.classList.add('material-icons');
+			iel.classList.add('fa');
 
 			// add color to the icon. priority : icon.color > option.color > theme
 			iel.style.color = (options.icon.color) ? options.icon.color : options.color;
@@ -311,7 +311,7 @@ export const Toast = function (instance) {
 				this.toast.insertBefore(iel, this.toast.firstChild);
 			}
 			else {
-				iel.textContent = options.icon;
+                iel.classList.add(options.icon);
 				this.toast.insertBefore(iel, this.toast.firstChild);
 			}
 
